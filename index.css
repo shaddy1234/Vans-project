@@ -54,6 +54,11 @@ header a:hover {
     color: #161616;
     text-decoration: underline;
 }
+a.active-styles{
+    font-weight: bold;
+    text-decoration: underline;
+    color: red;
+}
 footer {
     background-color: #161616;
     color: #AAAAAA;
