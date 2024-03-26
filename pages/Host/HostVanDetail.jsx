@@ -14,11 +14,11 @@ export default function HostVanDetail() {
     if (!currentVan) {
         return <h1>Loading...</h1>
     }
-
     return (
         <section>
             <Link
-                to="?"
+                to=".."
+                relative="path"
                 className="back-button"
             >&larr; <span>Back to all vans</span></Link>
 
@@ -35,6 +35,7 @@ export default function HostVanDetail() {
                         <h4>${currentVan.price}/day</h4>
                     </div>
                 </div>
+                {/*Your changes will go here*/}
             </div>
         </section>
     )
