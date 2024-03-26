@@ -1,9 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReactDOM from 'react-dom/client';
-import { createRoot } from 'react-dom/client';
-import Home from "./pages/Home";
-import About from "./pages/About";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import Home from "./pages/Home"
+import About from "./pages/About"
 import Vans from "./pages/Vans/Vans"
 import VanDetail from "./pages/Vans/VanDetail"
 import Dashboard from "./pages/Host/Dashboard"
@@ -14,12 +13,12 @@ import HostVanDetail from "./pages/Host/HostVanDetail"
 import Layout from "./components/Layout"
 import HostLayout from "./components/HostLayout"
 
-import './server'
+import "./server"
 
 function App() {
   return (
-    <Router>
-       <Routes>
+    <BrowserRouter>
+      <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
@@ -35,8 +34,10 @@ function App() {
           </Route>
         </Route>
       </Routes>
-    </Router>
-  );
+    </BrowserRouter>
+  )
 }
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM
+  .createRoot(document.getElementById('root'))
+  .render(<App />);
