@@ -130,7 +130,13 @@ footer {
 .home-container a:hover {
     transform: translate(1px, 1px);
 }
-
+.back-button {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-top: 60px;
+    margin-left: 26px;
+}
 
 /*** ABOUT PAGE ***/
 .about-page-container {
